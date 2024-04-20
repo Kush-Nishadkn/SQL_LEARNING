@@ -24,11 +24,19 @@
                 <td><%= res.email %></td>
                 <td><%= res.username %></td>
 
-                <td><form method="get"  action="/user/<%=res.id%>/edit">
+                <td>
+                    <form method="get"  action="/user/<%=res.id%>/edit">
                     <button>Edit username</button>
 
 
-                </form></td>
+                </form>
+                 </td>
+                 <td>
+                    <form method="get" action="/user/<%=res.id%>/delete">
+                      <button>Delete</button>
+                    </form>
+                  </td>
+          
             </tr>
             <% } %>
     </table>
